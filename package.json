@@ -1,6 +1,10 @@
 {
   "name": "todo-monolith",
   "private": true,
+  "scripts": {
+    "test": "node_modules/.bin/karma start karma.conf.js",
+    "start": "./bin/webpack-dev-server"
+  },
   "dependencies": {
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.25.0",
@@ -32,7 +36,8 @@
     "style-loader": "^0.18.2",
     "webpack": "^3.2.0",
     "webpack-manifest-plugin": "^1.1.2",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
     "webpack-dev-server": "^2.5.1"
